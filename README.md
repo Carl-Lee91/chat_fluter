@@ -1,2 +1,2 @@
 # chat_fluter
- flutter chating application
+ 플러터 채팅앱(가제)
