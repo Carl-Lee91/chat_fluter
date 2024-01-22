@@ -51,6 +51,7 @@ class MyApp extends ConsumerWidget {
         textSelectionTheme: const TextSelectionThemeData(
           cursorColor: Color(0xFF4B986C),
         ),
+        dialogBackgroundColor: const Color(0xFF4B986C).withOpacity(0.8),
         navigationBarTheme: NavigationBarThemeData(
           iconTheme: MaterialStateProperty.resolveWith<IconThemeData?>(
             (states) => const IconThemeData(
@@ -90,6 +91,7 @@ class MyApp extends ConsumerWidget {
         textSelectionTheme: const TextSelectionThemeData(
           cursorColor: Color(0xFF4B986C),
         ),
+        dialogBackgroundColor: const Color(0xFF4B986C).withOpacity(0.8),
         navigationBarTheme: NavigationBarThemeData(
           iconTheme: MaterialStateProperty.resolveWith<IconThemeData?>(
             (states) => IconThemeData(
