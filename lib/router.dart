@@ -1,5 +1,6 @@
 import 'package:chat_flutter/screens/auth/login/login_screen.dart';
 import 'package:chat_flutter/screens/auth/signup/signup_screen_auth.dart';
+import 'package:chat_flutter/screens/main_navigation/navigation_bar/main_navigation.dart';
 import 'package:chat_flutter/screens/onboarding/start_onbording_screen.dart';
 import 'package:chat_flutter/screens/onboarding/welcome_onbording_screen.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -29,6 +30,14 @@ final routerProvider = Provider(
           name: WelcomeOnboardingScreen.routeName,
           path: WelcomeOnboardingScreen.routeUrl,
           builder: (context, state) => const WelcomeOnboardingScreen(),
+        ),
+        GoRoute(
+          name: MainNaviagtion.routeName,
+          path: "/:tab(personChat|groupChat|myPage)",
+          builder: (context, state) {
+            final tab = state.pathParameters["tab"]!;
+            return MainNaviagtion(tab: tab);
+          },
         ),
       ],
     );
