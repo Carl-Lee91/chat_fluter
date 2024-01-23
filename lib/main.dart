@@ -42,12 +42,15 @@ class MyApp extends ConsumerWidget {
         ),
         useMaterial3: true,
         textTheme: Typography.blackCupertino,
+        secondaryHeaderColor: Colors.black,
         brightness: Brightness.light,
-        scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: Colors.grey.shade300,
         bottomAppBarTheme: BottomAppBarTheme(
           color: Colors.grey.shade50,
         ),
         primaryColor: const Color(0xFF4B986C),
+        canvasColor: Colors.white,
+        shadowColor: Colors.black26,
         textSelectionTheme: const TextSelectionThemeData(
           cursorColor: Color(0xFF4B986C),
         ),
@@ -64,6 +67,18 @@ class MyApp extends ConsumerWidget {
               color: Colors.white,
             ),
           ),
+        ),
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          elevation: 5,
+          backgroundColor: Colors.white,
+          selectedIconTheme: IconThemeData(
+            color: Color(0xFF4B986C),
+          ),
+          selectedLabelStyle: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Color(0xFF4B986C),
+          ),
+          selectedItemColor: Color(0xFF4B986C),
         ),
       ),
       darkTheme: ThemeData(
@@ -82,12 +97,15 @@ class MyApp extends ConsumerWidget {
         ),
         useMaterial3: true,
         textTheme: Typography.whiteCupertino,
+        secondaryHeaderColor: Colors.grey.shade300,
         brightness: Brightness.dark,
         scaffoldBackgroundColor: Colors.grey.shade800,
         bottomAppBarTheme: BottomAppBarTheme(
           color: Colors.grey.shade50,
         ),
         primaryColor: const Color(0xFF4B986C),
+        canvasColor: Colors.grey.shade300,
+        shadowColor: Colors.white38,
         textSelectionTheme: const TextSelectionThemeData(
           cursorColor: Color(0xFF4B986C),
         ),
@@ -104,6 +122,18 @@ class MyApp extends ConsumerWidget {
               color: Colors.grey.shade300,
             ),
           ),
+        ),
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          elevation: 5,
+          backgroundColor: Colors.grey.shade300,
+          selectedIconTheme: const IconThemeData(
+            color: Color(0xFF4B986C),
+          ),
+          selectedLabelStyle: const TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Color(0xFF4B986C),
+          ),
+          selectedItemColor: const Color(0xFF4B986C),
         ),
       ),
       themeMode: ThemeMode.system,
