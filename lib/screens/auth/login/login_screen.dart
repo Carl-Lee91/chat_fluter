@@ -53,7 +53,7 @@ class LoginScreen extends ConsumerWidget {
                   ),
                   Gap(MediaQuery.of(context).size.height * 0.05),
                   const AuthTextField(
-                    hintText: "아이디",
+                    hintText: "이메일",
                   ),
                   Gap(MediaQuery.of(context).size.height * 0.02),
                   const AuthTextField(

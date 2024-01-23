@@ -57,7 +57,7 @@ class SignUpAuthScreen extends ConsumerWidget {
                   ),
                   Gap(MediaQuery.of(context).size.height * 0.02),
                   const AuthTextField(
-                    hintText: "아이디",
+                    hintText: "이메일",
                   ),
                   Gap(MediaQuery.of(context).size.height * 0.02),
                   const AuthTextField(

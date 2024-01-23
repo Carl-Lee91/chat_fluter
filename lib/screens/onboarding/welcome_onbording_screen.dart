@@ -4,12 +4,17 @@ import 'package:chat_flutter/screens/widgets/img_hero.dart';
 import 'package:chat_flutter/screens/widgets/text_btn.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
 
 class WelcomeOnboardingScreen extends StatelessWidget {
   const WelcomeOnboardingScreen({super.key});
 
   static const String routeName = "welcome";
   static const String routeUrl = "/welcome";
+
+  void onEnterTab(BuildContext context) {
+    context.go("/personChat");
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +43,7 @@ class WelcomeOnboardingScreen extends StatelessWidget {
                 text: "시작하기",
                 textSize: 18,
                 textColor: Colors.white,
-                onPressed: () {},
+                onPressed: () => onEnterTab(context),
                 color: Theme.of(context).primaryColor,
               )
             ],
