@@ -2,12 +2,14 @@ import 'package:chat_flutter/screens/main_navigation/my_page/edit_my_profile_scr
 import 'package:chat_flutter/screens/main_navigation/my_page/license_screen.dart';
 import 'package:chat_flutter/screens/main_navigation/my_page/setting_screen.dart';
 import 'package:chat_flutter/screens/main_navigation/my_page/terms_and_policies_screen.dart';
+import 'package:chat_flutter/screens/onboarding/start_onbording_screen.dart';
 import 'package:chat_flutter/screens/widgets/avatar_rec.dart';
 import 'package:chat_flutter/screens/widgets/my_page_list.dart';
 import 'package:chat_flutter/screens/widgets/text_btn.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
 
 class MyPageScreen extends ConsumerWidget {
   const MyPageScreen({super.key});
@@ -50,6 +52,10 @@ class MyPageScreen extends ConsumerWidget {
         fullscreenDialog: true,
       ),
     );
+  }
+
+  void logout(BuildContext context) {
+    context.go(StartOnboardingScreen.routeUrl);
   }
 
   @override
@@ -143,7 +149,7 @@ class MyPageScreen extends ConsumerWidget {
             text: "로그아웃",
             textSize: 16,
             textColor: Colors.white,
-            onPressed: () {},
+            onPressed: () => logout(context),
             color: Colors.amber,
           ),
         ],

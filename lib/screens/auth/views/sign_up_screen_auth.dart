@@ -1,5 +1,5 @@
 import 'package:chat_flutter/const/functions.dart';
-import 'package:chat_flutter/screens/auth/signup/signup_screen_else.dart';
+import 'package:chat_flutter/screens/auth/views/sign_up_screen_else.dart';
 import 'package:chat_flutter/screens/widgets/auth_textfield.dart';
 import 'package:chat_flutter/screens/widgets/gradient.dart';
 import 'package:chat_flutter/screens/widgets/img_hero.dart';

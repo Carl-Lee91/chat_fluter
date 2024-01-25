@@ -1,5 +1,5 @@
-import 'package:chat_flutter/screens/auth/login/login_screen.dart';
-import 'package:chat_flutter/screens/auth/signup/signup_screen_auth.dart';
+import 'package:chat_flutter/screens/auth/views/login_screen.dart';
+import 'package:chat_flutter/screens/auth/views/sign_up_screen_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
